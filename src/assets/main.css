@@ -1,0 +1,64 @@
+html,
+body {
+    margin: 0;
+    direction: rtl;
+}
+
+
+/* ----- גלובלי: שימי את זה בקובץ ה-CSS הראשי (למשל src/assets/main.css) ----- */
+:root {
+    --scrollbar-size: 10px;
+    /* עובי הסקרול */
+    --sb-track: #F4F9E1;
+    /* צבע הרקע של המסילה */
+    --sb-thumb: #267565;
+    /* צבע הידית */
+    --sb-thumb-hover: #418d7e;
+    /* צבע הידית בהובר */
+    --sb-thumb-active: #0f4238;
+    /* צבע הידית בלחיצה */
+}
+
+/* פיירפוקס */
+* {
+    scrollbar-width: thin;
+    /* thin / auto */
+    scrollbar-color: var(--sb-thumb) var(--sb-track);
+}
+
+/* WebKit (כרום/ספארי/אדג’) – אנכי ואופקי */
+::-webkit-scrollbar {
+    width: var(--scrollbar-size);
+    height: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--sb-track);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb);
+    border-radius: 999px;
+    /* “כרית” פנימית כדי שהידית לא תדביק למסילה */
+    border: 3px solid var(--sb-track);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--sb-thumb-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--sb-thumb-active);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--sb-track);
+}
+
+
+/* אופציונלי: מחלקה למכולות ספציפיות עם גלילה */
+.scroll-pretty {
+    overflow: auto;
+    max-height: 70vh;
+}

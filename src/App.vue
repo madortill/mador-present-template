@@ -105,7 +105,7 @@ html {
 }
 
 #app {
-  font-family: "aharoni";
+  font-family: "ploni";
   height: 100vh;
   width: 100vw;
   background-color: #0e5648;
@@ -193,6 +193,11 @@ html {
 @font-face {
   font-family: carmela;
   src: url("/src/assets/fonts/carmela.ttf");
+}
+
+@font-face {
+  font-family: ploni;
+  src: url("/src/assets/fonts/ploni-bold-aaa.otf");
 }
 
 </style>

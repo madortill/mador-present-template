@@ -58,19 +58,19 @@ export default {
         },
         mop: {
           title: 'תחום מו"פ',
-          text: 'מפתחות הלומדה פיתחו והשיקו מספר לומדות לבה”דים בשנה האחרונה'
+          text: 'מפתחות הלומדה פיתחו והשיקו מספר לומדות לבה”דים בשנה האחרונה - מוזמנים לסרוק ולראות אותן'
         },
         graphics: {
           title: "תחום גרפיקה",
-          text: "בשנה האחרונה עבדנו על מספר רב של גרפיקות כאן מוצגות חלקן"
+          text: 'בשנה האחרונה עבדנו על מספר רב של גרפיקות כאן מוצגות חלקן - ניתן להגדיל את התצוגה באמצעות (ctrl ו- "+")'
         },
         images: {
           title: "תחום וידאו - תמונות",
-          text: "הצלמים שלנו תיעדו אירועים רבים כאן מוצגות חלק מהתמונות"
+          text: 'הצלמים שלנו תיעדו אירועים רבים כאן מוצגות חלק מהתמונות - ניתן להגדיל את התצוגה באמצעות (ctrl ו- "+")'
         },
         videos: {
           title: "תחום וידאו",
-          text: "מוזמנים לצפות בסרטונים עליהם עבדנו בשנה האחרונה"
+          text: "מוזמנים לצפות בסרטונים עליהם עבדנו בשנה האחרונה - ניתן לדפדף"
         }
       }
     };
@@ -93,7 +93,7 @@ export default {
 .header {
   width: 100%;
   height: 13rem;
-  background-color: #d2e4b0;
+  background-color: #B3D8F3;
   position: absolute;
   top: 0rem;
   right: 0rem;
@@ -108,11 +108,11 @@ html {
   font-family: "ploni";
   height: 100vh;
   width: 100vw;
-  background-color: #0e5648;
+  background-color: #0E3656;
   position: absolute;
   top: 0rem;
   right: 0rem;
-  color: #0e5648;
+  color: #0E3656;
   overflow-y:scroll;
 }
 
@@ -153,7 +153,7 @@ html {
 
 .explain {
   position: relative;
-  color: #F4F9E1;
+  color: #EDFAFF;
   font-family: "carmela";
   text-align: center;
   font-size: 2rem;
@@ -169,7 +169,7 @@ html {
   width: 3.5rem;
   padding: 0.3rem;
   border-radius: 200px;
-  background-color: #0e5648;
+  background-color: #0E3656;
   font-size: 2.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -182,7 +182,7 @@ html {
 }
 
 .btn-back:active {
-  background-color: #267565;
+  background-color: #225b8a;
 }
 
 @font-face {
@@ -191,13 +191,13 @@ html {
 }
 
 @font-face {
-  font-family: carmela;
-  src: url("/src/assets/fonts/carmela.ttf");
+  font-family: ploni;
+  src: url("/src/assets/fonts/ploni-bold-aaa.otf");
 }
 
 @font-face {
-  font-family: ploni;
-  src: url("/src/assets/fonts/ploni-bold-aaa.otf");
+  font-family: carmela;
+  src: url("/src/assets/fonts/carmela.ttf");
 }
 
 </style>

@@ -9,6 +9,7 @@
       <img :src="lomda.src" :alt="lomda.id" class="lomda-img" :id="lomda.id" />
       <p class="lomda-title">{{ lomda.title }}</p>
       <p class="lomda-text">{{ lomda.text }}</p>
+      <img :src="lomda.qr" :alt="lomda.id" class="lomda-qr" :id="lomda.id" />
     </div>
   </div>
 </template>
@@ -16,11 +17,12 @@
 <script>
 export default {
   name: "mop",
-  components: {},
+  components: {
+  },
   data() {
     return {
       mopData: [
-        { id: "", title: "", text: '', src: "" }
+        { id: "", title: "", text: '', src: "", qr: "" }
       ],
     };
   },
@@ -32,6 +34,7 @@ export default {
 <style scoped>
 #mop {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -39,8 +42,8 @@ export default {
 .lomda-card {
   height: 30rem;
   width: 20rem;
-  background-color: #f4f9e1;
-  border: 5px solid #d2e4b0;
+  background-color: #EDFAFF;
+  border: 5px solid #B3D8F3;
   border-radius: 20px;
   text-align: center;
   margin: 1rem;
@@ -53,16 +56,23 @@ export default {
   max-width: 18rem;
   border-radius: 20px;
   margin-bottom: 0rem;
+  max-height: 18rem;
 }
 
 .lomda-title {
   margin-top: 0rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: -0.5rem;
 }
 
 .lomda-text {
   margin-top: 0rem;
-  font-size: 1.1rem;
+  margin-bottom: 0rem;
+  font-size: 1rem;
+}
+
+.lomda-qr {
+  margin-top: 0rem;
+  height: 5rem;
 }
 </style>

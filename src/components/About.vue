@@ -43,10 +43,10 @@ export default {
 .aboutBtn {
   position: absolute;
   border: none;
-  color: #F4F9E1;
+  color: #B3D8F3;
   font-size: 1.6rem;
   transition: background-color 0.3s ease;
-  background-color: #0E5648;
+  background-color: #0E3656;
   border-radius: 150px;
   width: 2.5rem;
   height: 2.5rem;
@@ -57,7 +57,7 @@ export default {
 }
 
 .aboutBtn:hover {
-  background-color: #1b6b5b;
+  background-color: #215c8b;
 }
 .div-about {
   position: absolute;
@@ -65,7 +65,7 @@ export default {
   left: 9rem;
   top: 2rem;
   font-family: "rubik";
-  background: #F4F9E1;
+  background: #EDFAFF;
   border-radius: 1rem;
   box-shadow: 0 15px 20px -20px rgba(0, 0, 0, 0.4);
   text-align: center;
@@ -78,7 +78,7 @@ export default {
   margin: 5%;
 }
 .list-text-about:hover {
-  background-color: #d3dab7;
+  background-color: #bddae6;
 }
 
 .fade-enter-active,

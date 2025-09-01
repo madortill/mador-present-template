@@ -52,7 +52,7 @@ export default {
 .field-btn {
   display: flex;
   text-align: center;
-  background-color: #d2e4b0;
+  background-color: #B3D8F3;
   border-radius: 20px;
   justify-content: center;
   width: 14rem;
@@ -60,18 +60,18 @@ export default {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  border: 5px solid #f4f9e1;
+  border: 5px solid #EDFAFF;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .field-btn:hover {
-  background-color: #f4f9e1;
-  border: 5px solid #d2e4b0;
+  background-color: #EDFAFF;
+  border: 5px solid #B3D8F3;
 }
 
 .field-btn:active {
-  background-color: #acbe88;
+  background-color: #82b6d8;
 }
 
 .field-img {
@@ -84,6 +84,6 @@ export default {
 }
 
 .field-btn:nth-child(n + 4) {
-  transform: translateX(-10rem); /* חצי מהרוחב של עמודה + חצי gap */
+  transform: translateX(-10rem);
 }
 </style>

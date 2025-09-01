@@ -1,14 +1,17 @@
 <template>
   <div id="videos">
     <div class="carousel">
-      <carousel :videos="gsharimVideos" :currId="'gsharim'"></carousel>
-      <p class="carousel-text">קורס גשרים - בה"ד חינוך</p>
+      <carousel :videos="collection1Videos" :currId="'gsharim'"></carousel>
+      <p class="carousel-text">מארז סרטונים - 1 </p>
     </div>
     <div class="carousel">
-      <carousel :videos="kabatimVideos" :currId="'kabatim'"></carousel>
-      <p class="carousel-text">סרטוני קב"טים</p>
+      <carousel :videos="collection2Videos" :currId="'kabatim'"></carousel>
+      <p class="carousel-text">מארז סרטונים - 2</p>
     </div>
-    <video v-for="(video, i) in moreVideos" :key="i" :src="video" class="video" controls></video>
+    <div v-for="(video, i) in moreVideos" :key="i">
+      <video  :src="video.src" class="video" controls></video>
+      <p class="video-text">{{ video.text }}</p>
+    </div>
   </div>
 </template>
 
@@ -21,16 +24,19 @@ export default {
   },
   data() {
     return {
-      gsharimVideos: [
+      collection1Videos: [
+        "",
         "",
         ""
       ],
-      kabatimVideos: [
+      collection2Videos: [
+        "",
         "",
         ""
       ],
       moreVideos: [
-      ""
+        {src: "", text: ''},
+        {src: "", text: ''}
       ]
     };
   },
@@ -40,7 +46,7 @@ export default {
 
 <style scoped>
 .carousel-text {
-  color: #F4F9E1;
+  color: #EDFAFF;
   font-family: "carmela";
   font-size: 1.5rem;
 }
@@ -57,7 +63,13 @@ export default {
 }
 
 .video {
-  margin: 1rem 1rem;
+  margin: 0rem 1rem;
   width: 40rem;
+}
+
+.video-text {
+  color: #EDFAFF;
+  font-family: "carmela";
+  font-size: 1.5rem;
 }
 </style>

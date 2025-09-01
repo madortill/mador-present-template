@@ -94,9 +94,10 @@ export default {
   width: 100%;
   height: 13rem;
   background-color: #B3D8F3;
-  position: absolute;
+  position: fixed;
   top: 0rem;
   right: 0rem;
+  z-index: 3;
 }
 
 html {
@@ -158,7 +159,6 @@ html {
   text-align: center;
   font-size: 2rem;
   bottom: 1rem;
-  z-index: 5;
 }
 
 .btn-back {

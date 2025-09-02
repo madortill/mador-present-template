@@ -26,7 +26,7 @@
     <div class="whole-page">
       <div class="aside" v-if="page == 'main'">
         <p class="side-title">כותרת כותרת כותרת כותרת</p>
-        <p class="side-text">טקסט טקסט טקסט טקסט טקסט טקסט</p>
+        <p class="side-text"> טקסט טקסט טקסט טקסט טקסט</p>
         <img
         class="side-img"
         src="/src/assets/general/eden.png"

@@ -1,6 +1,9 @@
 <template>
   <div id="about">
-    <button class="aboutBtn" @click="openAbout">i</button>
+    <div class="btn">
+      <button class="aboutBtn" @click="openAbout">i</button>
+      <p class="text">אודות</p>
+    </div>
     <Transition name="fade">
       <div v-show="showAbout" class="div-about">
         <h4 class="list-text-about">מפתחת ראשית:</h4>
@@ -40,30 +43,33 @@ export default {
 </script>
 
 <style scoped>
-.aboutBtn {
+.btn {
   position: absolute;
+  left: 1.5rem;
+  bottom: 0rem;
+  text-align: center;
+}
+.aboutBtn {
   border: none;
-  color: #B3D8F3;
-  font-size: 1.6rem;
+  color: #0e3656;
+  font-size: 1.9rem;
   transition: background-color 0.3s ease;
-  background-color: #0E3656;
+  background-color: #edfaff;
   border-radius: 150px;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
-  left: 5rem;
-  top: 1.5rem;
   font-family: "carmela";
 }
 
 .aboutBtn:hover {
-  background-color: #215c8b;
+  background-color: #a6c7d4;
 }
 .div-about {
   position: absolute;
   width: 12rem;
-  left: 9rem;
-  top: 2rem;
+  left: 6rem;
+  bottom: 2rem;
   font-family: "rubik";
   background: #EDFAFF;
   border-radius: 1rem;
@@ -92,6 +98,11 @@ export default {
 .fade-enter-to,
 .fade-leave-from {
   opacity: 1;
+}
+
+.text {
+  font-size: 0.9rem;
+  color: #edfaff;
 }
 
 @font-face {

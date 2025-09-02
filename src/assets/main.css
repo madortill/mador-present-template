@@ -9,13 +9,13 @@ body {
 :root {
     --scrollbar-size: 10px;
     /* עובי הסקרול */
-    --sb-track: #F4F9E1;
+    --sb-track: #EDFAFF;
     /* צבע הרקע של המסילה */
-    --sb-thumb: #267565;
+    --sb-thumb: #0E3656;
     /* צבע הידית */
-    --sb-thumb-hover: #418d7e;
+    --sb-thumb-hover: #2a5d86;
     /* צבע הידית בהובר */
-    --sb-thumb-active: #0f4238;
+    --sb-thumb-active: #5683a8;
     /* צבע הידית בלחיצה */
 }
 
